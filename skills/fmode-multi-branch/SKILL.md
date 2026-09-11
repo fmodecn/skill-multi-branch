@@ -86,3 +86,7 @@ export ANTHROPIC_BASE_URL=<api> ANTHROPIC_AUTH_TOKEN=$FMODE_API_KEY
 
 `scripts/dispatch.sh`：标准派发器（任务书路径+项目目录+模型 → 后台 spawn+状态记录）
 `scripts/status-reporter.mjs`：四态+心跳写 reporter 同表（AgentTaskStatus）
+
+## 凭据
+
+**本技能无凭据依赖**——不读不写任何 token/密钥/凭据文件，仅做任务派发与状态记录。
