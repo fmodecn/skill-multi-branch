@@ -30,11 +30,17 @@ description_en: "Multi-branch orchestration: Hermes (communication layer) dispat
 ```markdown
 # <任务名> 任务书
 你是<角色>。仓库/输入路径：...
+## 基准学习（★ 硬性字段——涉及样式/交互/排版必填）
+- 基准仓库绝对路径：<如 /opt/data/git-repos/skill-present>（先深读其 deck.js/tokens.css/base.css/page-craft 规则再动手）
+- 素材缺失处理：直接从基准仓库复制 lib/ 到本课程仓复用，禁止凭想象写样式
+- lib 路径自检：写完第一页即 curl 验证 tokens.css 引用路径线上可达（404=路径错，重算相对层级）
 ## 你要做的（编号清单，逐条可验收）
 ## 纪律（不可动项/措辞口径/品牌规则）
 ## 交付（文件+部署+commit push）
 完成后只输出一行：<DONE-标记> <关键字段>
 ```
+
+> **事故案例（2026-09-12 gpt6-warmup）**：任务书只写"skill-present 级交互"形容词，未给基准仓库路径与 lib 自检要求 → CC 凭想象产出，lib 引用 404 → 全站裸文本无样式无翻页。规则：**凡涉及视觉/交互的任务书，"基准路径+机制深读+路径自检"三字段缺一不可。**
 
 ### 1.3 派发（执行层）
 
